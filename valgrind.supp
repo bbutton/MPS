@@ -1,0 +1,116 @@
+{
+   gg
+   Memcheck:Addr1
+   fun:_dl_close
+   obj:/lib/libc-2.3.1.so
+   fun:_dl_catch_error_internal
+   obj:/lib/libc-2.3.1.so
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:__builtin_new
+   fun:_Znwj
+   fun:_ZNSt24__default_alloc_templateILb1ELi0EE14_S_chunk_allocEjRi
+   fun:_ZNSt24__default_alloc_templateILb1ELi0EE9_S_refillEj
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/lib/libc-2.3.1.so
+   obj:/lib/libc-2.3.1.so
+   obj:/lib/libc-2.3.1.so
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:malloc
+   fun:getservbyname
+   obj:/usr/lib/libmysqlclient.so.10.0.0
+   fun:mysql_init
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/lib/libc-2.3.1.so
+   obj:/lib/libc-2.3.1.so
+   obj:/lib/libc-2.3.1.so
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:calloc
+   fun:_dl_new_object
+   fun:_dl_map_object_from_fd
+   fun:_dl_map_object_internal
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:malloc
+   fun:__cxa_get_globals
+   fun:__cxa_throw
+   fun:_ZN12ConveyerBelt22movePackageToNextQueueERSt5dequeIN5boost10shared_ptrI7PackageEESaIS4_EES7_
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:malloc
+   fun:_dl_new_object
+   fun:_dl_map_object_from_fd
+   fun:_dl_map_object_internal
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:malloc
+   fun:_dl_map_object_internal
+   obj:/lib/libc-2.3.1.so
+   fun:_dl_catch_error_internal
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:malloc
+   fun:_dl_map_object_deps_internal
+   obj:/lib/libc-2.3.1.so
+   fun:_dl_catch_error_internal
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:malloc
+   fun:my_malloc
+   fun:init_dynamic_array
+   fun:get_charset
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:calloc
+   fun:_dl_check_map_versions_internal
+   obj:/lib/libc-2.3.1.so
+   fun:_dl_catch_error_internal
+}
+
+{
+   <insert a suppression name here>
+   Memcheck:Leak
+   fun:__builtin_new
+   fun:_Znwj
+   fun:_ZNSt24__default_alloc_templateILb1ELi0EE8allocateEj
+   fun:_ZNSs4_Rep9_S_createEjRKSaIcE
+}
